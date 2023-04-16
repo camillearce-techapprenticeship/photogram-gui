@@ -3,6 +3,7 @@
 <p> insert form here </p>
 <hr>
 <table border="1">
+
 <tr>
     <th>
       ID
@@ -16,6 +17,7 @@
 </tr>
 
 <% @list_of_users.each do |a_user| %>
+
 <tr>
     <td>
       <%= a_user.id %>
@@ -28,6 +30,8 @@
     <td>
       <a href="/users/<%= a_user.username %>">Show details</a>
     </td>
-  </tr>
-  <% end %>
-  </table>
+</tr>
+
+<% end %>
+
+</table>
