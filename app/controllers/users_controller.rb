@@ -12,4 +12,6 @@ class UsersController < ApplicationController
 
     render({ :template => "user_templates/show.html.erb" })
   end
+
+  
 end
