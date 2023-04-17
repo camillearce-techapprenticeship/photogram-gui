@@ -6,9 +6,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    username = params.fetch("username_path")
+    @username = params.fetch("username_path")
 
-    @the_user = User.where({ :username => username }).at(0)
+    @the_user = User.where({ :username => @username }).at(0)
 
     render({ :template => "user_templates/show.html.erb" })
   end

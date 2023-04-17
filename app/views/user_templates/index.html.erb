@@ -1,6 +1,13 @@
 <h1> List of Users </h1>
 
-<p> insert form here </p>
+
+<form action="/users/<%= @username %>">
+  <label for="add_user"> Username </label>
+  <input id="add_user" placeholder="Enter a username..." size="50px" name="username">
+  <button>Add user </button>
+</form>
+
+
 <hr>
 <table border="1">
 
